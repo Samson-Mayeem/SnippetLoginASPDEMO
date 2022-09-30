@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameWorkCore;
+
 //using pomelo.Microsoft.EntityFrameworkCore.MySql;
 
 var builder = WebApplication.CreateBuilder(args);

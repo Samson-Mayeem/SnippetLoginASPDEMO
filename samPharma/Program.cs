@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
+using samPharma.Data;
 
-//using pomelo.Microsoft.EntityFrameworkCore.MySql;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+builder.Services.AddDbContext<samPharmaDbContext>
+                (options => options.UseMySql(builder.Configuration.GetConnectionString("con_sampharma"), new MySqlServerVersion(new Version())));
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

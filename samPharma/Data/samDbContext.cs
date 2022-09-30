@@ -1,13 +1,16 @@
-
-using Microsoft.EntityFrameworkCore;
-using samPharma.Models;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using SimpleLogin.Models;
+using Microsoft.EntityFrameWorkCore;
+using Pomelo.Microsoft.EntityFrameWorkCore;
 
 namespace samPharma.Data
 {
-    public class samPharmaDbContext : DbContext
+    public class samDbContext
     {
-        public samPharmaDbContext(DbContextOptions options): base(options)
+        public samDbContext(DbContextOptions options): base(options)
         {
 
         }
@@ -18,6 +21,5 @@ namespace samPharma.Data
         public DbSet<Stock> stock { get; set; }
         public DbSet<Supplier> supplier { get; set; }
         public DbSet<User> user { get; set; }
-
     }
 }

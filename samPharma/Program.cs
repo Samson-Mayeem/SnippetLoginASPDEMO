@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-builder.Services.AddDbContext<samPharmaDbContext>
+builder.Services.AddDbContext<samDbContext>
                 (options => options.UseMySql(builder.Configuration.GetConnectionString("con_sampharma"), new MySqlServerVersion(new Version())));
 
 

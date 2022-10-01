@@ -2,16 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EntityFrameWorkCore;
-using Pomelo.Microsoft.EntityFrameWorkCore;
-using samPharma.Data;
+using Microsoft.EntityFrameworkCore;
+using samPharma.Models;
 
 
 namespace samPharma.Data
 {
-    public class samDbContext
+    public class samDbContext  :DbContext
     {
-        public samDbContext(DbContextOptions options): base(options)
+        public samDbContext(DbContextOptions options) : base(options)
         {
 
         }

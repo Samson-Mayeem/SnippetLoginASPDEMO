@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,7 +8,8 @@ namespace samPharma.Models
 {
     public class Order
     {
-        public String Order_Id {get; set;}
+        [Key]
+        public long Order_Id {get; set;}
         public String Drug_Id {get; set;}
         public DateTime Order_Date {get; set;}
         public Int64 Quantity {get; set;}

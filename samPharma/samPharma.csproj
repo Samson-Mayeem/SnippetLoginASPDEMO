@@ -5,8 +5,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="Views\Customer\AddCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Customer\AddCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Customer\AddCustomer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Customer\AddCustomer.cshtml" />
   </ItemGroup>
 </Project>

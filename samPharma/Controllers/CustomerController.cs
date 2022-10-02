@@ -19,7 +19,7 @@ namespace samPharma.Controllers
             return View(customer);
         }
         [HttpPost]
-        public async Task<IActionResult> Add(Customer customer)
+        public async Task<IActionResult> AddCustomer(Customer customer)
         {
             var cust = new Customer
             {
@@ -32,8 +32,7 @@ namespace samPharma.Controllers
             };
             await SamDbContext.AddAsync(cust);
             await SamDbContext.SaveChangesAsync();
-            return RedirectToAction("Index", "Customer");
-
+            return RedirectToAction("Index","CustomerSummary");
         }
     }
 }

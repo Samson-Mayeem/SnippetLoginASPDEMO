@@ -8,8 +8,9 @@ using samPharma.Models;
 
 namespace samPharma.Data
 {
-    public class samDbContext  :DbContext
+    public class samDbContext :DbContext
     {
+        
         public samDbContext(DbContextOptions options) : base(options)
         {
 

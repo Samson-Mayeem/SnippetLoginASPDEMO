@@ -29,9 +29,9 @@ namespace samPharma.Controllers
               return View(loginviewmodel);
               var user = await _userManager.FindByEmailAsync(loginviewmodel.Email);
            }
-                     if(User != null)
+                     if(user != null)
             {
-                var passwordCheck = await _userManager.CheckPasswordAsync(User, loginviewmodel.Password);            }
+                var passwordCheck = await _userManager.CheckPasswordAsync(user, loginviewmodel.Password);            }
         }
     }
 }

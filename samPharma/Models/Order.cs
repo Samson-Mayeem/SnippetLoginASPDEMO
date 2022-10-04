@@ -17,5 +17,5 @@ namespace samPharma.Models
         public Decimal Order_Discount {get; set;}
         public String Payment_Mode {get; set;}
         public String Customer_Reference {get; set;}
-    }
+    }  
 }

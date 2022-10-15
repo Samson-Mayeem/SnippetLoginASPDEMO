@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace samPharma.Views.Users
+namespace samPharma.Views.Home
 {
-    public class AddUserModel : PageModel
+    public class Index1Model : PageModel
     {
         public void OnGet()
         {

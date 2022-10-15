@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using samPharma.Data;
-using samPharma.Models;
+using samPharma.Models.Domain;
 
 namespace samPharma.Controllers
 {

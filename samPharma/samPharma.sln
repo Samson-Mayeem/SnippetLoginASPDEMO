@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samPharma", "samPharma.csproj", "{682304A6-706B-4488-B030-ABD112B46FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "samPharma.Library.Common", "..\samPharma.Library.Common\samPharma.Library.Common.csproj", "{330B91B0-A26B-4BDB-9C25-14DF908C53D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{682304A6-706B-4488-B030-ABD112B46FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682304A6-706B-4488-B030-ABD112B46FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682304A6-706B-4488-B030-ABD112B46FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682304A6-706B-4488-B030-ABD112B46FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330B91B0-A26B-4BDB-9C25-14DF908C53D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330B91B0-A26B-4BDB-9C25-14DF908C53D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330B91B0-A26B-4BDB-9C25-14DF908C53D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330B91B0-A26B-4BDB-9C25-14DF908C53D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45382258-7346-49B2-AC98-8B709793E83F}
+	EndGlobalSection
+EndGlobal
